@@ -65,7 +65,7 @@ app.get('*', (req, res) => {
 });
 
 // Port for localhost or production
-const port = 5000;
+const port = process.env.PORT || 3000;
 
 // Listening to corresponding port
 app.listen(port, () => {

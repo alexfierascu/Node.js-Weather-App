@@ -15,7 +15,7 @@ form.addEventListener('submit', (e) => {
     feedback.innerHTML = 'Loading...';
 
     // Fetching Data and output
-    fetch(`http://localhost:5000/weather?address=${input.value}&units=${type.value}`)
+    fetch(`/weather?address=${input.value}&units=${type.value}`)
         .then(res => res.json())
         .then(data => {
 
